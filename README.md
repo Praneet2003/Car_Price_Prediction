@@ -1,2 +1,2 @@
-# Car_Price_Prediction
+# Ev_Range_Prediction
 Machine learning model using pyspark
