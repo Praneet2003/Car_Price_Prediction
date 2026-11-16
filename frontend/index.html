@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EV Range Predictor</title>
+
+    <link rel="stylesheet" href="/frontend/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">⚡</span>
+            <span>EV<span class="green">Range</span></span>
+        </div>
+
+        <div class="nav-tag">POWERED BY PYSPARK ML</div>
+
+    </header>
+
+
+    <main class="container">
+
+        <!-- Hero Section -->
+
+        <section class="hero">
+
+            <div class="eyebrow">
+                <span class="status-dot"></span>
+                ELECTRIC VEHICLE INTELLIGENCE
+            </div>
+
+            <h1>
+                Discover Your EV's<br>
+                <span class="green">Driving Range.</span>
+            </h1>
+
+            <p>
+                Estimate how far your electric vehicle can travel
+                on a single charge using machine learning.
+            </p>
+
+        </section>
+
+
+        <!-- Main Prediction Card -->
+
+        <section class="main-card">
+
+            <div class="card-heading">
+
+                <div>
+                    <h2>Vehicle Information</h2>
+                    <p>Enter your vehicle details to get an estimated range.</p>
+                </div>
+
+                <div class="car-icon">🚘</div>
+
+            </div>
+
+
+            <!-- Vehicle Form -->
+
+            <form id="predictionForm">
+
+                <div class="form-grid">
+
+                    <!-- Model Year -->
+
+                    <div class="form-group">
+
+                        <label for="model_year">MODEL YEAR</label>
+
+                        <input
+                            type="number"
+                            id="model_year"
+                            name="model_year"
+                            placeholder="Select model year"
+                            required
+                            disabled
+                        >
+
+                    </div>
+
+
+                    <!-- Manufacturer -->
+
+                    <div class="form-group">
+
+                        <label for="make">VEHICLE MANUFACTURER</label>
+
+                        <select id="make" required disabled>
+
+                            <option value="">Loading manufacturers...</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Vehicle Model -->
+
+                    <div class="form-group">
+
+                        <label for="model">VEHICLE MODEL</label>
+
+                        <select id="model" required disabled>
+
+                            <option value="">Select manufacturer first</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Vehicle Type -->
+
+                    <div class="form-group">
+
+                        <label for="vehicle_type">ELECTRIC VEHICLE TYPE</label>
+
+                        <select id="vehicle_type" required disabled>
+
+                            <option value="">Loading vehicle types...</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Prediction Button -->
+
+                <button type="submit" id="predictBtn" disabled>
+
+                    <span>Predict Electric Range</span>
+
+                    <span class="button-arrow">→</span>
+
+                </button>
+
+            </form>
+
+
+            <!-- Dropdown Loading Status -->
+
+            <div
+                id="optionsLoading"
+                class="loading-message hidden"
+                role="status"
+                aria-live="polite"
+            >
+                <div class="loader"></div>
+                <span>Loading vehicle options...</span>
+            </div>
+
+
+            <!-- Prediction Loading Status -->
+
+            <div
+                id="loadingMessage"
+                class="loading-message hidden"
+                role="status"
+                aria-live="polite"
+            >
+                <div class="loader"></div>
+                <span>Analyzing vehicle details...</span>
+            </div>
+
+
+            <!-- Error Message -->
+
+            <div
+                id="errorMessage"
+                class="error-message hidden"
+                role="alert"
+                aria-live="assertive"
+            ></div>
+
+
+            <!-- Prediction Result -->
+
+            <section
+                id="resultSection"
+                class="result-section hidden"
+                aria-live="polite"
+            >
+
+                <div class="result-top">
+
+                    <span class="result-label">
+                        PREDICTED ELECTRIC RANGE
+                    </span>
+
+                    <span class="result-icon">⚡</span>
+
+                </div>
+
+
+                <div class="result-value">
+
+                    <span id="predictedRange">0.00</span>
+
+                    <span class="result-unit" id="rangeUnitLabel">miles</span>
+
+                </div>
+
+
+                <!-- Range Unit Selector -->
+
+                <div class="range-unit-selector">
+
+                    <label for="rangeUnit">DISPLAY UNIT</label>
+
+                    <select id="rangeUnit">
+
+                        <option value="miles">Miles (mi)</option>
+
+                        <option value="km">Kilometres (km)</option>
+
+                    </select>
+
+                </div>
+
+
+                <p class="result-description">
+                    Estimated driving range on a single full charge.
+                </p>
+
+
+                <div class="result-note">
+
+                    This is a machine learning estimate based on historical
+                    vehicle data. Actual range may vary.
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- Model Performance -->
+
+        <section class="metrics-section">
+
+            <div class="section-title">
+
+                <h2>Model Performance</h2>
+
+                <p>Evaluation results on the unseen test dataset.</p>
+
+            </div>
+
+
+            <div class="metrics-grid">
+
+                <div class="metric-card">
+
+                    <span class="metric-name">R² SCORE</span>
+
+                    <h3>0.9674</h3>
+
+                    <p>Coefficient of determination</p>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <span class="metric-name">RMSE</span>
+
+                    <h3>16.48</h3>
+
+                    <p>Root mean squared error (miles)</p>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <span class="metric-name">MAE</span>
+
+                    <h3>11.06</h3>
+
+                    <p>Mean absolute error (miles)</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer>
+
+            <p>EV Range Predictor | Built with Flask & PySpark MLlib</p>
+
+            <p>Machine Learning Project</p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="/frontend/script.js"></script>
+
+</body>
+
+</html>
