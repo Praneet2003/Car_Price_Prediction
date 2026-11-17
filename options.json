@@ -1,0 +1,221 @@
+{
+    "makes": [
+        "ALFA ROMEO",
+        "ASTON MARTIN",
+        "AUDI",
+        "AZURE DYNAMICS",
+        "BENTLEY",
+        "BMW",
+        "CADILLAC",
+        "CHEVROLET",
+        "CHRYSLER",
+        "DODGE",
+        "FERRARI",
+        "FIAT",
+        "FISKER",
+        "FORD",
+        "HONDA",
+        "HYUNDAI",
+        "JAGUAR",
+        "JEEP",
+        "KARMA",
+        "KIA",
+        "LAMBORGHINI",
+        "LAND ROVER",
+        "LEXUS",
+        "LINCOLN",
+        "MAZDA",
+        "MCLAREN",
+        "MERCEDES-BENZ",
+        "MINI",
+        "MITSUBISHI",
+        "NISSAN",
+        "POLESTAR",
+        "PORSCHE",
+        "SMART",
+        "SUBARU",
+        "TESLA",
+        "TH!NK",
+        "TOYOTA",
+        "VOLKSWAGEN",
+        "VOLVO",
+        "WHEEGO ELECTRIC CARS"
+    ],
+    "make_models": {
+        "KIA": [
+            "NIRO",
+            "OPTIMA",
+            "SORENTO",
+            "SOUL",
+            "SPORTAGE"
+        ],
+        "LAND ROVER": [
+            "RANGE ROVER",
+            "RANGE ROVER SPORT"
+        ],
+        "BMW": [
+            "330E",
+            "530E",
+            "550E",
+            "740E",
+            "745E",
+            "745LE",
+            "750E",
+            "I3",
+            "X3",
+            "X5",
+            "XM"
+        ],
+        "MERCEDES-BENZ": [
+            "AMG GT",
+            "B-CLASS",
+            "C-CLASS",
+            "SL-CLASS"
+        ],
+        "MINI": [
+            "COUNTRYMAN",
+            "HARDTOP"
+        ],
+        "PORSCHE": [
+            "918",
+            "CAYENNE",
+            "MACAN",
+            "PANAMERA",
+            "TAYCAN"
+        ],
+        "VOLVO": [
+            "S90",
+            "V60",
+            "XC60",
+            "XC90"
+        ],
+        "TOYOTA": [
+            "PRIUS",
+            "PRIUS PRIME (PHEV)",
+            "RAV4"
+        ],
+        "MITSUBISHI": [
+            "I-MIEV",
+            "OUTLANDER"
+        ],
+        "NISSAN": [
+            "LEAF",
+            "ROGUE"
+        ],
+        "FERRARI": [
+            "296",
+            "SF90"
+        ],
+        "HONDA": [
+            "ACCORD"
+        ],
+        "CHEVROLET": [
+            "BOLT EV",
+            "VOLT"
+        ],
+        "SMART": [
+            "EQ FORTWO",
+            "FORTWO ELECTRIC DRIVE"
+        ],
+        "MAZDA": [
+            "CX-90"
+        ],
+        "LEXUS": [
+            "NX"
+        ],
+        "FORD": [
+            "ESCAPE",
+            "FOCUS",
+            "FUSION",
+            "RANGER"
+        ],
+        "TESLA": [
+            "MODEL 3",
+            "MODEL S",
+            "MODEL X",
+            "ROADSTER"
+        ],
+        "CHRYSLER": [
+            "PACIFICA"
+        ],
+        "HYUNDAI": [
+            "KONA",
+            "SONATA"
+        ],
+        "VOLKSWAGEN": [
+            "E-GOLF"
+        ],
+        "AUDI": [
+            "A3",
+            "E-TRON",
+            "Q5 E"
+        ],
+        "BENTLEY": [
+            "BENTAYGA",
+            "CONTINENTAL",
+            "FLYING SPUR"
+        ],
+        "LINCOLN": [
+            "AVIATOR",
+            "CORSAIR"
+        ],
+        "POLESTAR": [
+            "POLESTAR 2"
+        ],
+        "DODGE": [
+            "HORNET"
+        ],
+        "JAGUAR": [
+            "I-PACE"
+        ],
+        "SUBARU": [
+            "CROSSTREK"
+        ],
+        "ALFA ROMEO": [
+            "TONALE"
+        ],
+        "KARMA": [
+            "GS-6",
+            "REVERO"
+        ],
+        "FIAT": [
+            "500"
+        ],
+        "JEEP": [
+            "GRAND CHEROKEE",
+            "WRANGLER"
+        ],
+        "LAMBORGHINI": [
+            "REVUELTO",
+            "URUS"
+        ],
+        "CADILLAC": [
+            "CT6",
+            "ELR"
+        ],
+        "TH!NK": [
+            "CITY"
+        ],
+        "MCLAREN": [
+            "ARTURA"
+        ],
+        "WHEEGO ELECTRIC CARS": [
+            "WHEEGO"
+        ],
+        "FISKER": [
+            "KARMA"
+        ],
+        "AZURE DYNAMICS": [
+            "TRANSIT CONNECT ELECTRIC"
+        ],
+        "ASTON MARTIN": [
+            "VALHALLA"
+        ]
+    },
+    "vehicle_types": [
+        "Battery Electric Vehicle (BEV)",
+        "Plug-in Hybrid Electric Vehicle (PHEV)"
+    ],
+    "min_year": 1999,
+    "max_year": 2027
+}
